@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "CMR";
+  src: url("./fonts/cmunrm.ttf");
+}
+
+@font-face {
+  font-family: "CMR_ITALIC";
+  src: url("./fonts/cmunci.ttf");
+}
+
+@font-face {
+  font-family: "CMR_SECTION_TITLE";
+  src: url("./fonts/cmuntt.ttf");
+}
+
+html {
+  font-size: 10px;
+  font-family: "CMR";
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 235, 235);
+}
+
+.info {
+  padding: 1rem 5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info .avatar {
+  width: fit-content;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.info .avatar img {
+  width: 15rem;
+}
+
+.info .brief-info {
+  padding: 1.5rem 0;
+  min-width: 40%;
+  width: fit-content;
+}
+
+.info .brief-info #name {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.info .brief-info #position {
+  font-size: 1.8rem;
+}
+
+.info .brief-info #university {
+  font-size: 1.8rem;
+}
+
+.info .detail-info {
+  padding: 1.5rem 0;
+  min-width: 40%;
+  width: fit-content;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.info .detail-info .item {
+  display: flex;
+}
+
+.info .detail-info .item img {
+  margin-right: 0.5rem;
+}
+
+.info .detail-info .item a {
+  text-decoration: none;
+  color: black;
+}
+
+.section {
+  padding: 1rem 5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section .section-title {
+  width: calc(80% + 16rem);
+  border-bottom: 2px solid black;
+}
+
+.section .section-title .title {
+  text-transform: uppercase;
+  font-family: "CMR_SECTION_TITLE";
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.section .section-content {
+  width: calc(80% + 16rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.section .section-content .item {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section .section-content .item .item-title {
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  list-style: "– ";
+}
+
+.section .section-content .item .item-title p {
+  margin-left: 1rem;
+  display: list-item;
+}
+
+.section .section-content .item .item-description {
+  padding-left: 2rem;
+  font-family: "CMR_ITALIC";
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section .section-content .item .item-detail {
+  padding-left: 2.5rem;
+  font-size: 1.6rem;
+  list-style: "+ ";
+}
+
+.section .section-content .item .item-detail p {
+  margin-left: 2.5rem;
+  display: list-item;
+}
+
+.section .section-content .skill {
+  margin-top: 0.5 rem;
+  font-size: 1.6rem;
+}
+
+.profile {
+  padding: 1rem 5rem;
+  width: 90%;
+}
+
+.profile .profile-download {
+  width: calc(80% + 16rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile #download {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  outline: none;
+  border: 0.2rem solid white;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .info {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .info .avatar {
+    padding-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .info .avatar img {
+    width: 150px;
+    height: 150px;
+    object-position: 50% 10%;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0.4rem 0.4rem 0.2rem 0.2rem rgb(230, 230, 230);
+  }
+
+  .info .brief-info {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info .brief-info p {
+    text-align: center;
+  }
+
+  .info .detail-info {
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .section .section-title {
+    width: 100%;
+  }
+
+  .section .section-content {
+    width: 100%;
+  }
+
+  .profile {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .profile .profile-download {
+    width: 100%;
+  }
+}
